@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Start of Zeacon Code -->
+    <script type="text/javascript" async="" id="zeacon-sdk"
+        src="https://licencetotest.com/sdk/correlator.js?api-key=c0988d6d-b45f-48f0-869a-54a4720eb41e"></script>
+    <!-- End of Zeacon Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraka Impact Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FAF3E0;
+        }
+
+        .navbar {
+            background-color: #FDF7E4;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: #F4A261;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: #E76F51;
+        }
+
+        .cart-popup {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            background: white;
+            box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: none;
+            overflow-y: auto;
+        }
+
+        .cart-popup .close-btn {
+            cursor: pointer;
+            font-size: 20px;
+            float: right;
+        }
+
+        .cart-popup .progress-bar {
+            background: #A6CE39;
+            height: 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">BARAKA IMPACT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Ingredients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Black Soaps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Recipe Kits & Books</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Under $25</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sustainability</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Shop Best Sellers</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://www.barakasheabutter.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0272%2F2335%2F9533%2Ffiles%2F145051.SHEABUTTER.BACKGROUND.FINAL2X2_bf90a878-8ebf-46c7-ba4e-f8515c81df4f.png%3Fv%3D1704647642&w=1200&q=75"
+                        class="img-fluid" alt="Shea Butter">
+                    <h5>Shea Butter (Organic & Fair Trade)</h5>
+                    <p class="text-warning">★★★★★ (5,839)</p>
+                    <p>$18.00</p>
+                    <div data-selector="add-to-cart-button">
+                        <button
+                            class="ρd__all ρd__div ρr-ewAxd ρdss ρmns ρtns ρoED ρoEDW8AzJ ρi ρga4Bi btn-custom add-to-cart"
+                            data-foo="bar" type="button">
+                            <div class="__wab_flex-container ρfc">
+                                <div class="ρd__all ρd__div ρiIfg ρiIfgW8AzJ"><span
+                                        class="__wab_slot ρs ρpJxB ρpJxBw8AzJ">
+                                        <div class="ρd__all ρd__div ρ_1QzPi">
+                                            <div class="__wab_flex-container ρfc">
+                                                <div class="ρd__all ρd__div ρt ρc2JgF ">Add to Cart</div>
+                                            </div>
+                                        </div>
+                                    </span></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://www.barakasheabutter.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0272%2F2335%2F9533%2Ffiles%2F144851.COCOABUTTER.BACKGROUND.FINAL2X2_edadb40d-74b4-4005-963d-d6dff0a30ee8.png%3Fv%3D1704766864&w=1200&q=75"
+                        class="img-fluid" alt="Cocoa Butter">
+                    <h5>Cocoa Butter (Organic, Food Grade Cosmetic)</h5>
+                    <p class="text-warning">★★★★★ (2,262)</p>
+                    <p>$18.00</p>
+                    <div data-selector="add-to-cart-button"><button
+                            class="ρd__all ρd__div ρr-ewAxd ρdss ρmns ρtns ρoED ρoEDW8AzJ ρi ρga4Bi btn-custom add-to-cart"
+                            data-foo="bar" type="button">
+                            <div class="__wab_flex-container ρfc">
+                                <div class="ρd__all ρd__div ρiIfg ρiIfgW8AzJ"><span
+                                        class="__wab_slot ρs ρpJxB ρpJxBw8AzJ">
+                                        <div class="ρd__all ρd__div ρ_1QzPi">
+                                            <div class="__wab_flex-container ρfc">
+                                                <div class="ρd__all ρd__div ρt ρc2JgF ">Add to Cart</div>
+                                            </div>
+                                        </div>
+                                    </span></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://www.barakasheabutter.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0272%2F2335%2F9533%2Ffiles%2F144717.KOMBOBUTTER.BACKGROUND.FINAL2X2_e81cd583-b91f-4ea2-897d-345df05b15fc.png%3Fv%3D1704867507&w=1200&q=75"
+                        class="img-fluid" alt="Kombo Butter">
+                    <h5>Kombo Butter (Organic, Food Grade Cosmetic)</h5>
+                    <p class="text-warning">★★★★★ (813)</p>
+                    <p>$18.00</p>
+                    <div data-selector="add-to-cart-button"><button
+                            class="ρd__all ρd__div ρr-ewAxd ρdss ρmns ρtns ρoED ρoEDW8AzJ ρi ρga4Bi btn-custom add-to-cart"
+                            data-foo="bar" type="button">
+                            <div class="__wab_flex-container ρfc">
+                                <div class="ρd__all ρd__div ρiIfg ρiIfgW8AzJ"><span
+                                        class="__wab_slot ρs ρpJxB ρpJxBw8AzJ">
+                                        <div class="ρd__all ρd__div ρ_1QzPi">
+                                            <div class="__wab_flex-container ρfc">
+                                                <div class="ρd__all ρd__div ρt ρc2JgF ">Add to Cart</div>
+                                            </div>
+                                        </div>
+                                    </span></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card">
+                    <img src="https://www.barakasheabutter.com/_next/image?url=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0272%2F2335%2F9533%2Ffiles%2F145110.COCONUTOIL.BACKGROUND.FINAL2X2.TRADITIONAL_10849035-948d-4687-b567-567cace48f7f.png%3Fv%3D1723212376&w=1200&q=75"
+                        class="img-fluid" alt="Coconut Oil">
+                    <h5>Virgin Coconut Oil (Traditional Organic)</h5>
+                    <p class="text-warning">★★★★★ (1,096)</p>
+                    <p>$20.00</p>
+                    <div data-selector="add-to-cart-button"><button
+                            class="ρd__all ρd__div ρr-ewAxd ρdss ρmns ρtns ρoED ρoEDW8AzJ ρi ρga4Bi btn-custom add-to-cart"
+                            data-foo="bar" type="button">
+                            <div class="__wab_flex-container ρfc">
+                                <div class="ρd__all ρd__div ρiIfg ρiIfgW8AzJ"><span
+                                        class="__wab_slot ρs ρpJxB ρpJxBw8AzJ">
+                                        <div class="ρd__all ρd__div ρ_1QzPi">
+                                            <div class="__wab_flex-container ρfc">
+                                                <div class="ρd__all ρd__div ρt ρc2JgF ">Add to Cart</div>
+                                            </div>
+                                        </div>
+                                    </span></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-popup" id="cartPopup">
+        <span class="close-btn" onclick="closeCart()">&times;</span>
+        <h4>Your Cart</h4>
+        <p>5 items away from FREE shipping!</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 40%;"></div>
+        </div>
+        <div class="cart-items">
+            <div class="d-flex justify-content-between">
+                <p>Shea Butter (Organic & Fair Trade)</p>
+                <p>$18.00</p>
+            </div>
+            <div class="d-flex justify-content-between">
+                <p>Cocoa Butter (Organic, Food Grade Cosmetic)</p>
+                <p>$18.00</p>
+            </div>
+        </div>
+        <h5>Subtotal: $36.00</h5>
+        <div class="__wab_flex-container ρfc">
+            <div class="ρd__all ρd__div ρ_3YTv" style="background-color: rgb(247, 158, 6);">
+                <div class="__wab_flex-container ρfc">
+                    <div class="ρd__all ρd__div ρt ρ_9IfB6 btn btn-warning w-100">Checkout</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                document.getElementById('cartPopup').style.display = 'block';
+            });
+        });
+
+        function closeCart() {
+            document.getElementById('cartPopup').style.display = 'none';
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
